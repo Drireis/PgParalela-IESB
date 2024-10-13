@@ -52,11 +52,11 @@ if __name__ == '__main__':
     # Exibe os números primos encontrados
     print(f"Lista dos números primos encontrados (ordenada):\n {all_primes[:100]}\n")  # Exibe apenas os 100 primeiros
     # Exibe o tempo de execução
-    print(f"Tempo de execução (Threads): {time.time() - start_time:.4f} seconds")
+    print(f"Tempo de execução (Threads): {time.time() - start_time:.4f} segundos")
 
     # Medição de uso de CPU e memória
     process = psutil.Process(os.getpid())  # Obtém o processo atual para medir o uso de CPU e memória
-    cpu_usage = process.cpu_percent(interval=0.0010)  # Mede o uso de CPU com um intervalo de 1 segundo
+    cpu_usage = process.cpu_percent(interval=0.1000)  # Mede o uso de CPU com um intervalo de 1 segundo
     memory_info = process.memory_info().rss / (1024 ** 2)  # Mede o uso de memória em MB
 
     # Exibe o uso de CPU e memória

@@ -51,4 +51,4 @@ if __name__ == '__main__':
 
     # Exibe o uso de CPU e memória
     print(f"Medição de uso de CPU: {cpu_usage}%")
-    print(f"Medição de uso de memoria: {memory_info:.2f} MB")
+    print(f"Medição de uso de memória: {memory_info:.2f} MB")
